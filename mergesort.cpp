@@ -18,7 +18,7 @@ void merge(int A[], int mid, int low, int high)
 
     while (i <= mid && j <= high)
     {
-        if (A[i] < B[j])
+        if (A[i] < A[j])
         {
             B[k] = A[i];
             i++;
@@ -75,7 +75,8 @@ int main()
     {
         cin >> arr[i];
     }
-    // printarray(arr, n);
+    printarray(arr, n);
+    cout << endl;
     divide(arr, 0, n - 1);
-    // printarray(arr, n);
+    printarray(arr, n);
 }
